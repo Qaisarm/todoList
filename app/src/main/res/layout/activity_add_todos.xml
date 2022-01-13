@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.AddTodoActivity">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/todosName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Todo Title"
+        android:textColor="@color/black"
+        android:textColorHint="@color/teal_200" />
+
+    <!--edit text for todo description-->
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/todosDescription"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/idBtn"
+        android:layout_below="@id/todosName"
+        android:layout_margin="10dp"
+        android:gravity="start|top"
+        android:hint="Description"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textColor="@color/black"
+        android:textColorHint="@color/teal_200" />
+
+    <!--button for saving and updating a todo-->
+    <Button
+        android:id="@+id/idBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:text="Button"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
